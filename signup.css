@@ -1,0 +1,274 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:wght@400;700&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+nav {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    background-color: #111d36;
+    box-shadow: 0 2px 10px rgba(47, 47, 49, 0.5);
+}
+
+nav #home_nav {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+#homePageLogo {
+    height: 70px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+#cart {
+    font-size: 40px;
+    color: white;
+}
+
+#welcome_user {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 5px;
+    border-left: 1px solid #efefef;
+}
+
+#welcome1 {
+    font-size: 25px;
+    font-family: masiku;
+    color: #86b817;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-left: 40px;
+}
+
+#welcome2 i {
+    font-size: 20px;
+    color: #f5af02;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #f5af02;
+}
+
+#welcome2 span {
+    color: #f5af02;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: cursive;
+    letter-spacing: 3px;
+    padding-left: 5px;
+}
+#main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+}
+
+#background_img {
+    height: 100vh;
+    display: flex;
+    flex-basis: 40%;
+}
+
+#background_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#login-form {
+    flex-basis: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(135deg, #07205d 0%, #0a0a0baf 100%);
+}
+
+#login-form p {
+    font-size: 30px;
+    font-family: 'Montserrat', cursive;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#login-form #heading {
+    font-size: 40px;
+    font-family: 'Montserrat', cursive;
+    color: #ffffff;
+    position: relative;
+    right: 20px;
+}
+
+#login-form form {
+    padding: 60px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#login-form form input {
+    height: 60px;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 24px;
+    font-family: 'Montserrat', cursive;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#login-form form input::placeholder {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+#login-form form #submit {
+    background-color: #2858b8;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form form #submit:hover {
+    background-color: #0f5fffac;
+}
+
+#username,
+#password {
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#heading {
+    font-size: xx-large;
+}
+
+a {
+    text-decoration-line: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+
+/* For devices with a max width of 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    #main-container {
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    #background_img {
+        display: none;
+    }
+
+    #login-form {
+        flex-basis: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #login-form form {
+        padding: 30px;
+    }
+
+    #login-form form input {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #login-form form #submit {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    #login-form #heading {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #login-form p {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+/* For devices with a max width of 480px (smaller mobile devices) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #login-form {
+        gap: 15px;
+    }
+
+    #login-form #heading {
+        font-size: 28px;
+    }
+
+    #login-form p {
+        font-size: 20px;
+    }
+
+    #login-form form {
+        padding: 20px;
+    }
+
+    #login-form form input {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    #login-form form #submit {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+

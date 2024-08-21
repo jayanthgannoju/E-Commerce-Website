@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="shortcut icon" href="./Assets/HomePageLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Home.css">
+</head>
+<body>
+    <nav>
+    <section id="home_nav">
+        <a href="#"><img src="./Assets/Brand-eBay.png" alt="" id="homePageLogo"></a>
+        <div id="search_container">
+            <input type="text" placeholder="Search..." id="search_input" autocomplete="off">
+            <button id="search_button"><i class="fa-solid fa-search"></i></button>
+            <div id="suggestions_container"></div>
+        </div>
+        <a href="#price_container"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
+        <span id="cart_value">0</span>
+    </section>
+    <section id="welcome_user">
+        <p id="welcome1">Welcome!</p>
+        <div id="welcome2">
+            <a href="#"><i class="fa-solid fa-user" id="user-icon"></i></a>
+            <span id="user"></span>
+        </div>
+    </section>
+</nav>
+    <section id="card_container"></section>
+    <section id="cart_items"></section>
+
+    <main id="price_container"></main>
+
+    <!-- Tidio Chatbot Integration -->
+    <script src="//code.tidio.co/6bw5qeai8pezdjdekyxq0becbhwjzz0g.js" async></script>
+    <script src="./Home.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="shortcut icon" href="./Assets/HomePageLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Buynow.css">
+</head>
+<body>
+    <!-- Your existing code -->
+    <nav>
+        <section id="home_nav">
+            <a href="#"><img src="./Assets/Brand-eBay.png" alt="" id="homePageLogo"></a>
+        </section>
+        <section id="welcome_user">
+            <p id="welcome1">Welcome!</p>
+            <div id="welcome2">
+                <span id="user">Jay</span>
+            </div>
+        </section>
+    </nav>
+
+    <main>
+        <section id="order_summary">
+            <h2>Order Summary</h2>
+            <div id="order_details"></div>
+        </section>
+
+        <section id="payment_methods">
+            <h2>Payment Methods</h2>
+            <form id="payment_form">
+                <label>
+                    <input type="radio" name="payment_method" value="credit_card" checked>
+                    Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment_method" value="debit_card">
+                    Debit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment_method" value="cash_on_delivery">
+                    Cash on Delivery
+                </label>
+                <label>
+                    <input type="radio" name="payment_method" value="upi">
+                    UPI
+                </label>
+
+                <div id="credit_card_details" class="payment_details">
+                    <h3>Credit Card Details</h3>
+                    <input type="text" placeholder="Card Number" required>
+                    <input type="text" placeholder="Name on Card" required>
+                    <input type="text" placeholder="Expiration Date" required>
+                    <input type="text" placeholder="CVV" required>
+                </div>
+
+                <div id="debit_card_details" class="payment_details">
+                    <h3>Debit Card Details</h3>
+                    <input type="text" placeholder="Card Number" required>
+                    <input type="text" placeholder="Name on Card" required>
+                    <input type="text" placeholder="Expiration Date" required>
+                    <input type="text" placeholder="CVV" required>
+                </div>
+
+                <div id="upi_details" class="payment_details">
+                    <h3>UPI Details</h3>
+                    <input type="text" placeholder="UPI ID" required>
+                </div>
+
+                <button type="button" id="confirm_payment">Submit Payment</button>
+            </form>
+        </section>
+    </main>
+
+    
+
+    <script src="./BuyNow.js"></script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+/* General Styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: #111d36;
+    box-shadow: 0 2px 10px rgba(47, 47, 49, 0.5);
+}
+
+nav #home_nav {
+    flex-basis: 79%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+#homePageLogo {
+    height: 70px;
+    width: 200px;
+    border-radius: 30px;
+}
+#search_container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+#search_input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+#search_button {
+    height: 36px;
+    width: 37px;
+    background-color: #00ff26; /* Adjust as needed */
+    border: none;
+    padding: 8px 12px;
+    margin-left: -5px; /* Remove border between input and button */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search_button i {
+    color: white;
+}
+
+#search_button:hover {
+    background-color: #005bb5; /* Adjust as needed */
+}
+
+#cart {
+    font-size: 40px;
+    color: white;
+}
+
+#welcome_user {
+    flex-basis: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 5px;
+    border-left: 1px solid #efefef;
+}
+
+#welcome1 {
+    font-size: 25px;
+    font-family: masiku;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-left: 40px;
+}
+
+#welcome2 i {
+    font-size: 20px;
+    color: #f5af02;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #f5af02;
+}
+
+#welcome2 span {
+    color: #f5af02;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: cursive;
+    letter-spacing: 3px;
+    padding-left: 5px;
+}
+
+#card_container {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background: linear-gradient(to right, rgba(170, 39, 129, 0.087), rgba(170, 39, 39, 0.087),rgba(69, 47, 214, 0.087),rgba(170, 39, 129, 0.087));;
+}
+
+.card {
+    background-color: #00ffe514;
+    height: 560px;
+    width: 430px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+#container h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #f5af02;
+}
+
+#container p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: cursive;
+    letter-spacing: 3px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.502) 0px 5px 15px;
+}
+
+.card img{
+    width: 65%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.card h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+    color: rgba(0,0,0,0.9);
+}
+
+.card button {
+    padding: 12px;
+    background-color: rgb(4, 28, 248);
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    width: 80%;
+    border-radius: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#buybutton{
+    font-family: masiku;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225, 65, 132);
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    width: 80%;
+    border-radius: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration-line: none;
+}
+.card button:hover {
+    background-color: rgba(41, 28, 223, 0.881);
+    transform: scale(1.01);
+    box-shadow: 0 2px 10px rgba(28, 30, 31, 0.719);
+}
+#buybutton:hover {
+    background-color: rgba(255, 0, 140, 0.612);
+    transform: scale(1.01);
+    box-shadow: 0 2px 10px rgba(28, 30, 31, 0.719);
+}
+#total-container{
+    height: 80px;
+    width: 80%;
+    display: flex;
+    text-transform: capitalize;
+    flex-direction: row;
+    /* background-color: rgb(26, 30, 43); */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    border-radius: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+}
+
+
+#cart_value {
+    font-size: 25px;
+    font-family: masiku;
+    background-color: #e53238;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    position: absolute;
+    right: 25px;
+    bottom: 50px;
+}
+
+#single_cart img {
+    /* object-fit: contain; */
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+#single_cart h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#single_cart p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/* Style for the cart item container */
+#single_cart {
+    position: relative; /* Ensure that the absolute positioning of the button is relative to this container */
+    height: 120px;
+    width: 94%;
+    left: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(2, 171, 255, 0.306);
+    border-radius: 10px;
+    font-weight: 800;
+    box-sizing: border-box; 
+}
+#single_cart:hover {
+    background-color: rgba(4, 163, 255, 0.47);
+    transition: transform 0.2s, box-shadow 0.2s;
+    transform: scale(1.01);
+}
+
+/* Style remove(X) button */
+#single_cart button {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background: transparent;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+    padding: 5px;
+    z-index: 1; /* Ensure the button is above other content */
+}
+
+/* Change the button color on hover */
+#single_cart button:hover {
+    color: darkred;
+    transform: scale(1.1);
+}
+
+#cart_items h1 {
+    color: #000000;
+    font-family: masiku;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+#cart_items p {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-family: masiku;
+    font-size: 30px;
+    /* color: #111d36; */
+}
+
+/* Style for the price container */
+#price_container {
+    height: 150px;
+    width: 95vw;
+    margin: 20px;
+    padding: 0px 20px;
+    background-color: royalblue;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around; /* Space between price and button */
+    align-items: center;
+    font-family: cursive;
+    border-radius: 20px;
+    position: relative; /* Ensures the button stays inside the container */
+}
+
+#price_container:hover {
+    background-color: royalblue;
+    /* transform: scale(1.02); */
+}
+
+/* Style for the "Buy Now" button */
+#buy_now_button {
+    background-color: #e53238;
+    color: white;
+    height: 70px;
+    width: 150px;
+    border: none;
+    /* padding: 10px 20px; */
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: masiku;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 20px; /* Spacing from the price text */
+    text-decoration-line: none;
+}
+
+#buy_now_button:hover {
+    background-color: #c4302b;
+    transform: scale(1.05);
+}
+
+
+
+/* For devices with a max width of 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    nav {
+        height: 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav #home_nav {
+        flex-basis: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #homePageLogo {
+        height: 50px;
+        width: 150px;
+    }
+
+    #cart {
+        font-size: 30px;
+    }
+
+    #welcome_user {
+        flex-basis: 100%;
+        padding-left: 10px;
+        border-left: none;
+        gap: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #welcome1 {
+        font-size: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #welcome2 i {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #welcome2 span {
+        font-size: 24px;
+        padding-left: 0;
+    }
+
+    #cart_value {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        right: 15px;
+        bottom: 30px;
+    }
+
+    #card_container {
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .card {
+        height: 550px;
+        width: 90%;
+    }
+    .card img {
+        height: 250px;
+        width: 70%;
+    }
+
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For devices with a max width of 480px (smaller mobile devices) */
+@media (max-width: 480px) {
+    nav {
+        height: 20%;
+    }
+
+    #homePageLogo {
+        height: 40px;
+        width: 90px;
+    }
+
+    #cart {
+        font-size: 25px;
+    }
+
+    #welcome_user {
+        padding-left: 5px;
+        gap: 2px;
+    }
+
+    #welcome1 {
+        font-size: 18px;
+    }
+
+    #welcome2 i {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    #welcome2 span {
+        font-size: 20px;
+    }
+
+    #cart_value {
+        font-size: 18px;
+        height: 25px;
+        width: 25px;
+        right: 10px;
+        bottom: 20px;
+    }
+
+    #card_container {
+        gap: 20px;
+    }
+
+    .card {
+        height: 90%;
+        width: 100%;
+    }
+
+    .card img {
+        width: 70%;
+    }
+
+    .card h1 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    #single_cart {
+        height: 100px;
+        width: 100vw;
+        padding: 5px 10px;
+    }
+
+    #single_cart img {
+        height: 50px;
+        width: 50px;
+    }
+
+    #single_cart h1, #single_cart p {
+        font-size: 14px;
+    }
+
+    #price_container p {
+        font-size: 30px;
+        height: 60px;
+        width: 100vw;
+    }
+}
