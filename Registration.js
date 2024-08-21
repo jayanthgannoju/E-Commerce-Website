@@ -6,5 +6,5 @@ form.addEventListener("submit",(event)=>{
     localStorage.setItem("username",username)
     localStorage.setItem("password",password)
     alert("SUCCESSFULLY REGISTERED😍😍")
-    open("./Index.html", "_self");
+    open("./index.html", "_self");
 })
